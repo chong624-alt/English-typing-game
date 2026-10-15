@@ -532,50 +532,34 @@
     /* -------------------------------------------------------------
      * 1. PRESET DATA & INITIAL STORAGE
      * ------------------------------------------------------------- */
-    const DEFAULT_PRESETS = [
+ const DEFAULT_LESSONS = [
       {
-        id: 'lesson-1',
-        title: '🌱 [중등 1단원] 꿈과 도전 (Dreams & Challenges)',
+        id: "lesson_custom_1",
+        title: "이번 단원 연습 (20단어)",
         words: [
-          { word: 'challenge', meaning: '도전, 난제' },
-          { word: 'curiosity', meaning: '호기심' },
-          { word: 'respect', meaning: '존중하다, 존경' },
-          { word: 'responsibility', meaning: '책임감' },
-          { word: 'confidence', meaning: '자신감' },
-          { word: 'give up', meaning: '포기하다' },
-          { word: 'look forward to', meaning: '~을 고대하다' },
-          { word: 'take care of', meaning: '~을 돌보다' },
-          { word: 'believe in', meaning: '~의 가능성을 믿다' },
-          { word: 'make mistakes', meaning: '실수하다' }
-        ]
-      },
-      {
-        id: 'lesson-2',
-        title: '🌍 [중등 2단원] 지구와 환경 (Earth & Nature)',
-        words: [
-          { word: 'climate crisis', meaning: '기후 위기' },
-          { word: 'environment', meaning: '환경' },
-          { word: 'recycle', meaning: '재활용하다' },
-          { word: 'protect', meaning: '보호하다' },
-          { word: 'pollution', meaning: '오염' },
-          { word: 'save energy', meaning: '에너지를 절약하다' },
-          { word: 'natural resource', meaning: '천연 자원' },
-          { word: 'ecosystem', meaning: '생태계' }
-        ]
-      },
-      {
-        id: 'lesson-3',
-        title: '💬 [기초 회화] 필수 일상 표현 (Everyday Idioms)',
-        words: [
-          { word: 'piece of cake', meaning: '식은 죽 먹기' },
-          { word: 'how have you been?', meaning: '그동안 어떻게 지냈어?' },
-          { word: 'sounds like fun', meaning: '재미있겠네' },
-          { word: 'take it easy', meaning: '마음 편히 가져' },
-          { word: 'keep up the good work', meaning: '계속 잘해봐' }
+          { en: "mop", kr: "대걸레로 닦다" },
+          { en: "camel", kr: "낙타" },
+          { en: "clam", kr: "조개" },
+          { en: "smash", kr: "때려 부수다, 깨뜨리다" },
+          { en: "forecast", kr: "예측, 예보" },
+          { en: "tightly", kr: "단단히, 꽉" },
+          { en: "Arctic", kr: "북극 (지방)" },
+          { en: "fool", kr: "속이다, 기만하다" },
+          { en: "temperature", kr: "온도, 기온" },
+          { en: "tool", kr: "도구" },
+          { en: "million", kr: "100만, 수많은" },
+          { en: "blow", kr: "(입으로) 불다" },
+          { en: "surround", kr: "둘러싸다" },
+          { en: "nearby", kr: "근처에, 가까운 곳에" },
+          { en: "wonder", kr: "경이, 경탄, 놀라움" },
+          { en: "spot", kr: "발견하다, 찾아내다" },
+          { en: "completely", kr: "완전히" },
+          { en: "in the end", kr: "마침내, 결국" },
+          { en: "desert", kr: "사막" },
+          { en: "vacuum", kr: "진공청소기로 청소하다" }
         ]
       }
     ];
-
     let vocabSets = [];
     let currentSetId = '';
     let currentWords = [];
