@@ -175,6 +175,7 @@
               <option value="slow" class="text-slate-800">🌿 천천히 (초보)</option>
               <option value="normal" class="text-slate-800">⭐ 보통 (기초 연습)</option>
               <option value="fast" class="text-slate-800">⚡ 조금 빠름 (도전)</option>
+              <option value="insane" class="text-slate-800">🚀 아주 빠름 (초고수 도전!)</option>
             </select>
           </div>
         </div>
@@ -884,7 +885,7 @@
     let rainClearedCount = 0;
     let rainSuccessfulCount = 0;
 
-    function changeRainSpeed(val) {
+   function changeRainSpeed(val) {
       if (val === 'snail') {
         rainSpeedMultiplier = 0.22;
       } else if (val === 'slow') {
@@ -893,11 +894,13 @@
         rainSpeedMultiplier = 0.60;
       } else if (val === 'fast') {
         rainSpeedMultiplier = 0.90;
+      } else if (val === 'insane') {
+        rainSpeedMultiplier = 1.35; // 아주 빠른 낙하 속도
       }
 
       if (rainActive && !rainPaused) {
         clearInterval(rainSpawnInterval);
-        const spawnDelay = Math.max(3500, 3000 / rainSpeedMultiplier);
+        const spawnDelay = Math.max(1800, 2600 / rainSpeedMultiplier);
         rainSpawnInterval = setInterval(spawnFallingWord, spawnDelay);
       }
     }
